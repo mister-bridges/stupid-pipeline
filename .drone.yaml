@@ -4,7 +4,7 @@ type: docker
 name: runner-checks
 
 steps:
-- name: able-to-pull-images
+- name: able-to-pull-images-and-execute
   image: docker:latest
   commands:
   - echo '[INFO] Running from within pipeline container'
