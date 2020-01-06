@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: docker
-name: runner-checks
+name: default
 
 steps:
 - name: able-to-pull-images-and-execute
