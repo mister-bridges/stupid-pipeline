@@ -3,11 +3,15 @@ kind: pipeline
 type: docker
 name: default
 
+platform:
+  os: linux
+  arch: amd64
+
 steps:
 - name: able-to-pull-images-and-execute
   image: docker:latest
   commands:
-  - echo '[INFO] Running from within pipeline container'
+    - echo '[INFO] Running from within pipeline container'
 
 trigger:
   branch:
