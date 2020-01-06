@@ -1,0 +1,10 @@
+---
+kind: pipeline
+type: docker
+name: runner-checks
+
+steps:
+- name: able-to-pull-images
+  image: docker:latest
+  commands:
+  - echo '[INFO] Running from within pipeline container'
