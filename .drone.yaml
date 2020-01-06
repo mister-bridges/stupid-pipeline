@@ -8,3 +8,10 @@ steps:
   image: docker:latest
   commands:
   - echo '[INFO] Running from within pipeline container'
+
+trigger:
+  branch:
+    - master
+    - develop
+    - feature/*
+    - bugfix/*
